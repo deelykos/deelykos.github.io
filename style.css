@@ -492,7 +492,6 @@ header nav ul li {
 .lighter-div {
   background-color: #3d3e42;
   width: 100vw;
-  /* height: 90vh; */
   padding: 5vh;
   display: flex;
   flex-direction: column;
