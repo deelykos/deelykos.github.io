@@ -14,7 +14,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Roboto", sans-serif;
-  background-color: #34353b;
+  background-color: #070811;
 }
 
 header {
@@ -26,6 +26,22 @@ header {
   background-repeat: no-repeat;
   width: 100vw;
 }
+
+header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('asset/model_bw.png');
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  filter: blur(500px); /* Adjust the pixel value as needed */
+  z-index: -1;
+}
+
 
 header nav {
   display: flex;
@@ -67,39 +83,6 @@ header nav ul li .active {
   color: #fbfbfb;
 }
 
-header nav .search {
-  height: 48px;
-  width: 200px;
-  background-color: #3d3e42;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  padding: 4px;
-  border-radius: 10px;
-}
-
-header nav .search input {
-  border: none;
-  background-color: transparent;
-  width: 80%;
-  color: #fbfbfb;
-  outline: none;
-}
-
-header nav .search input:focus {
-  border: none;
-  outline: none;
-}
-
-header nav .search input::placeholder {
-  color: #98999a;
-  font-size: 16px;
-}
-
-header nav .search i {
-  color: #98999a;
-}
-
 .landing {
   display: flex;
   height: 90vh;
@@ -121,27 +104,9 @@ header nav .search i {
 }
 
 .landing .intro h3 span {
-  color: #fec86a;
+  color: rgb(62, 62, 224);
   font-weight: 600;
   font-size: 3.5rem;
-}
-
-.intro button {
-  height: 48px;
-  width: 144px;
-  margin-top: 2.5vh;
-  margin-left: 10vw;
-  background-color: transparent;
-  border: 2px solid #fec86a;
-  border-radius: 8px;
-  color: #fec86a;
-  font-size: 16px;
-  transition: all ease 0.5s;
-}
-
-.intro button:hover {
-  background-color: #fec86a;
-  color: #34353b;
 }
 
 .socials {
@@ -157,7 +122,7 @@ header nav .search i {
 }
 
 .socials .line {
-  background-color: #fec86a;
+  background-color:rgb(62, 62, 224);
   height: 15vh;
   width: 2.5px;
 }
@@ -188,7 +153,7 @@ header nav .search i {
 .about .description .line {
   height: 2.5px;
   width: 400px;
-  background-color: #fec86a;
+  background-color: rgb(62, 62, 224);
   margin-right: 32px;
 }
 
@@ -198,7 +163,7 @@ header nav .search i {
 }
 
 .about .description p span {
-  color: #fec86a;
+  color: rgb(62, 62, 224);
 }
 
 .skills {
@@ -230,7 +195,7 @@ header nav .search i {
   height: 20vw;
   width: 20vw;
   background-color: #3d3e42;
-  border-radius: 20px;
+  border-radius: 80px;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -241,7 +206,7 @@ header nav .search i {
 }
 
 .skill-card:hover {
-  background-color: #fec86a;
+  background-color:  rgb(62, 62, 224);
 }
 
 .skill-card img {
@@ -267,7 +232,7 @@ header nav .search i {
 .portfolio-cards a {
   text-decoration: none;
   color: black;
-  background-color: #fec86a;
+  background-color:rgb(62, 62, 224);
   border-radius: 20px;
   padding: 5px;
 }
@@ -295,7 +260,7 @@ header nav .search i {
   height: 30vw;
   width: 30vw;
   background-color: #3d3e42;
-  border-radius: 20px;
+  border-radius: 80px;
   overflow: hidden;
   align-items: center;
   justify-content: center;
@@ -339,38 +304,8 @@ header nav .search i {
   text-align: center;
 }
 
-.portfolio-card .overlay button {
-  height: 36px;
-  width: 108px;
-  background-color: #fec86a;
-  border: 1px solid #fec86a;
-  border-radius: 8px;
-  color: #34353b;
-  font-size: 12px;
-  transition: all ease 0.5s;
-  cursor: pointer;
-}
-
 .portfolio-card .overlay:hover {
   opacity: 1;
-}
-
-.portfolio button {
-  margin-top: 50px;
-  height: 48px;
-  width: 144px;
-  background-color: #fec86a;
-  border: 1px solid #fec86a;
-  border-radius: 8px;
-  color: #34353b;
-  font-size: 16px;
-  font-weight: 500;
-  cursor: pointer;
-  transition: all ease 0.5s;
-}
-
-.portfolio button:hover {
-  background-color: #cc9e4e;
 }
 
 .experience {
@@ -426,14 +361,12 @@ header nav .search i {
   content: "";
   height: 20px;
   width: 20px;
-  color: #fec86a;
-  background-color: #fec86a;
+  background-color: rgb(62, 62, 224);
   position: absolute;
   transform: translate(-50%, -50%);
   top: 7.5%;
   left: -5%;
   border-radius: 50%;
-  box-shadow: 0px 0px 20px 5px #fec86a;
 }
 
 .exp-desc::before {
@@ -481,7 +414,7 @@ header nav .search i {
 }
 
 .contact-card {
-  background-color: #fec86a;
+  color: rgb(62, 62, 224);
   padding: 10px;
   border-radius: 8px;
   display: flex;
