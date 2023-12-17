@@ -93,29 +93,6 @@ header nav ul li .active {
   font-size: 3.5rem;
 }
 
-.socials {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  align-items: center;
-  margin-top: 50vh;
-}
-
-.socials a {
-  text-decoration: none;
-}
-
-.socials .line {
-  background-color:rgb(62, 62, 224);
-  height: 15vh;
-  width: 2.5px;
-}
-
-.socials i {
-  color: #fbfbfb;
-  font-size: 36px;
-}
-
 .about {
   height: 50vh;
   width: 100vw;
@@ -285,7 +262,7 @@ header nav ul li .active {
 .portfolio-card .overlay p {
   color: #fbfbfb;
   font-size: 16px;
-  text-align: center;
+  text-align: left;
 }
 
 .portfolio-card .overlay:hover {
@@ -329,8 +306,8 @@ header nav ul li .active {
 }
 
 .lighter-div .exp {
-  height: 30vh;
-  width: 50vw;
+  height: 25vh;
+  width: 40vw;
   position: relative;
   margin-left: 20vh;
 }
@@ -364,7 +341,7 @@ header nav ul li .active {
   left: -5%;
 }
 .exp-desc h3 {
-  color: #fbfbfb;
+  color:rgb(62, 62, 224);
   font-size: 20px;
   font-weight: 400;
   margin: 10px 0;
@@ -372,8 +349,6 @@ header nav ul li .active {
 
 .exp-desc p {
   color: #fbfbfb;
-  font-size: 16;
-  font-weight: 400;
 }
 
 .contact-me {
@@ -397,26 +372,26 @@ header nav ul li .active {
   gap: 24px;
 }
 
-.contact-card {
+.contact a i {
+  font-size: 50px;
   color: rgb(62, 62, 224);
-  padding: 10px;
-  border-radius: 8px;
-  display: flex;
-  gap: 10px;
-  margin-top: 7.5vh;
+}
+
+.contact a {
+  text-decoration: none;
 }
 
 /* Additional styles for smaller screens */
 @media (max-width: 868px) {
   header {
     padding: 30px 10px;
-    font-size: 13px;
-   
+    font-size: 15px;
     
  }
 
  .landing .intro h3 {
   font-size: 16px;
+  background-color: #34353ba2;
  }
 
  .landing .intro h3 span {
@@ -429,16 +404,6 @@ header nav ul li .active {
 
 header nav ul li {
   margin: 0px 8px;
-}
-
-.socials i {
-  font-size: 16px;
-  margin-right: 60px;
-}
-
-.socials .line {
-  margin-top: 80px;
-  margin-right: 60px;
 }
 
 .about h1 {
@@ -469,7 +434,7 @@ header nav ul li {
 }
 
 .skill-card {
-  border-radius: 20px;
+  border-radius: 15px;
 }
 
 .skills {
@@ -482,12 +447,17 @@ header nav ul li {
 
 .portfolio-card {
   border-radius: 10px;
-  height: 20vh;
-  width: 35vw;
+  width: 150px;
+  height: 250px;
+}
+
+.portfolio-card img {
+  height: 250px;
+  width: 150px;
 }
 
 .portfolio-card .overlay h3 {
-  font-size: 15px;
+  font-size: 18px;
 }
 
 .portfolio-card .overlay p {
@@ -497,6 +467,44 @@ header nav ul li {
 .portfolio-cards a {
   font-size: 12px;
   border-radius: 10px;
+}
+
+.experience h1 {
+  font-size: 23px;
+  left: 20%;
+}
+
+.exp h2 {
+  font-size: 23px;
+}
+
+.exp h3 {
+  font-size: 18px;
+}
+
+
+.lighter-div .exp {
+  margin-left: 10px;
+  width: 80vw;
+  margin-right: 10px;
+}
+
+.lighter-div {
+  background-color: #3d3e42;
+  width: 100vw;
+  /* height: 90vh; */
+  padding: 5vh;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.exp-desc p {
+  font-size: 13px;
+}
+
+.contact a i {
+  font-size: 25px;
 }
 
 }
