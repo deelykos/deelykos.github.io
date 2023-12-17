@@ -27,22 +27,6 @@ header {
   width: 100vw;
 }
 
-header::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: url('asset/model_bw.png');
-  background-position: right;
-  background-size: contain;
-  background-repeat: no-repeat;
-  filter: blur(500px); /* Adjust the pixel value as needed */
-  z-index: -1;
-}
-
-
 header nav {
   display: flex;
   justify-content: space-between;
@@ -420,4 +404,99 @@ header nav ul li .active {
   display: flex;
   gap: 10px;
   margin-top: 7.5vh;
+}
+
+/* Additional styles for smaller screens */
+@media (max-width: 868px) {
+  header {
+    padding: 30px 10px;
+    font-size: 13px;
+   
+    
+ }
+
+ .landing .intro h3 {
+  font-size: 16px;
+ }
+
+ .landing .intro h3 span {
+  font-size: 30px;
+ }
+
+ header nav img {
+  size: 6px;
+}
+
+header nav ul li {
+  margin: 0px 8px;
+}
+
+.socials i {
+  font-size: 16px;
+  margin-right: 60px;
+}
+
+.socials .line {
+  margin-top: 80px;
+  margin-right: 60px;
+}
+
+.about h1 {
+  font-size:23px;
+}
+
+.about {
+  padding-left: 15px;
+  padding-right: 10px;
+}
+
+.about .description {
+  display: flex;
+  align-items: start;
+}
+
+.about .description p {
+  color: #fbfbfb;
+  font-size: 15px;
+}
+
+.skills h1 {
+  font-size: 23px;
+}
+
+.skills h2 {
+  font-size: 12px;
+}
+
+.skill-card {
+  border-radius: 20px;
+}
+
+.skills {
+  padding: 50px 10px;
+}
+
+.portfolio h1 {
+  font-size: 23px;
+}
+
+.portfolio-card {
+  border-radius: 10px;
+  height: 20vh;
+  width: 35vw;
+}
+
+.portfolio-card .overlay h3 {
+  font-size: 15px;
+}
+
+.portfolio-card .overlay p {
+  font-size: 12px;
+}
+
+.portfolio-cards a {
+  font-size: 12px;
+  border-radius: 10px;
+}
+
 }
